@@ -58,11 +58,13 @@ body{
     margin: 10px;
 }
 @media screen and (max-width: 1440px) {
-    
-    .container {
+    .container-wrapper{
         background: url('./images/bg-intro-desktop.png');
         background-color: hsl(0, 100%, 74%) ;
-        display: flex;
+        padding: 20px 0;
+    }
+    .container {
+       display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -88,6 +90,19 @@ body{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+}
+img{
+   opacity: 50;
+}
+
+.icon {
+    position: fixed;
+    padding-left: 11%;
+    padding-top: 1%;
+}
+
+input:hover .icon{
+    opacity: 0;
 }
 input {
     display: block;
@@ -125,6 +140,11 @@ input:hover {
         font-size: medium;
         
         padding: 0;
+    }
+    .icon {
+        position: fixed;
+        padding-left: 29%;
+        padding-top: 2%;
     }
    
 }
