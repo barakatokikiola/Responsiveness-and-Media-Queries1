@@ -1,0 +1,14 @@
+
+
+@media screen and (max-width: 1440px) {
+    body {
+        background: url('./images/bg-intro-desktop.png');
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url('./images/bg-intro-mobile.png');
+    }
+}
