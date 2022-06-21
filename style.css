@@ -69,7 +69,7 @@ body{
         justify-content: center;
         align-items: center;
     }
-   
+  
 }
 
 .try{
@@ -91,19 +91,7 @@ body{
     padding: 20px;
     border-radius: 5px;
 }
-img{
-   opacity: 50;
-}
 
-.icon {
-    position: fixed;
-    padding-left: 11%;
-    padding-top: 1%;
-}
-
-input:hover .icon{
-    opacity: 0;
-}
 input {
     display: block;
     width: 100%;
@@ -117,6 +105,12 @@ input {
 input:hover {
     border: solid 2px hsl(249, 10%, 26%) ;
 }
+img{
+    opacity: 0;
+ }
+ .input-box:hover img{
+     opacity: 100;
+ }
 @media screen and (max-width: 375px) {
     
     .container {
@@ -141,12 +135,6 @@ input:hover {
         
         padding: 0;
     }
-    .icon {
-        position: fixed;
-        padding-left: 29%;
-        padding-top: 2%;
-    }
-   
 }
 .btn{
     display: block;
@@ -165,4 +153,18 @@ input:hover {
 span {
     color: hsl(0, 100%, 74%) ;
     font-weight: 600;
+}
+img {
+    position: relative;
+    top: 40px;
+    left: 45%;
+}
+.input-box p {
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+    font-size: xx-small;
+    text-align: end;
+}
+.input-box:hover p{
+    visibility: visible;
 }
