@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +13,6 @@
 </head>
 
 <body>
-    <div class="container-wrapper">
         <div class="container">
             <div class="col-1">
                 <h1>
@@ -34,38 +32,24 @@
                             Try it free 7 days
                         </span> then $20/mo. thereafter</p>
                 </div>
-                <div class="form-area">
+        
                     <form>
-                        <div class="input-box">
-                            <img class='icon icon1' src="./images/icon-error.svg">
-                            <input class="input" type="text" placeholder="First Name">
-                            <p>This field is required</p>
-                        </div>
-                        <div class="input-box">
-                            <img class='icon icon2' src="./images/icon-error.svg">
+                            <input type="text" placeholder="First Name">
+                            <span class="err">First Name cannot be empty</span>
                             <input type="text" placeholder="Last Name">
-                            <p>This field is required</p>
-                        </div>
-                        <div class="input-box">
-                            <img class='icon icon3' src="./images/icon-error.svg">
-                            <input type="email" placeholder="Email">
-                            <p>This field is required</p>
-                        </div>
-                        <div class="input-box">
-                            <img class='icon icon4' src="./images/icon-error.svg">
+                            <span class="err">Last Name cannot be empty</span>
+                            <input type="email" placeholder="Email Address">
+                            <span class="err">This does not looks like an email</span>
                             <input type="password" placeholder="Password">
-                            <p>This field is required</p>
-                        </div>
-                        <button class="btn">CLAIM YOUR FREE TRIAL </button>
+                            <span class="err">Password cannot be empty</span>
+                        <button>CLAIM YOUR FREE TRIAL</button>
+                        <p class="terms">By clicking the button, you
+                            are agreeing to our
+                            <span>Terms and Services </span>
+                        </p>
                     </form>
-                    <p class="terms">By clicking the button, you
-                        are agreeing to our
-                        <span>Terms and Services </span>
-                    </p>
-                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

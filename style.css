@@ -1,76 +1,54 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-
-### Accent
-
-- Blue: hsl(248, 32%, 49%)
-
-### Neutral
-
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 500, 600, 700 */
-
-
 body{
     font-family: 'Poppins', sans-serif;
 }
-.container-wrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
- 
-}
-.container{
-    box-sizing: content-box;
-    
-} 
-.col-1 {
-    color: #fff;
-    margin: 10px;
-    padding: 30px;
-}
-.col-2 {
-    margin: 10px;
-}
+
 @media screen and (max-width: 1440px) {
-    .container-wrapper{
+    .container {
         background: url('./images/bg-intro-desktop.png');
         background-color: hsl(0, 100%, 74%) ;
-        padding: 20px 0;
-    }
-    .container {
-       display: flex;
+        display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .col-1 {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        background: url('./images/bg-intro-mobile.png');
+        background-color: hsl(0, 100%, 74%) ;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-  
+    .col-1 {
+        text-align: center;
+        color: #fff;
+    }
+    .col-1 > p {
+        padding: 0;
+        font-size: x-small;
+    }
+    h1{
+        font-size: medium;
+        
+        padding: 0;
+    }
+    .col-2 {
+        width: 75vw;
+    }
+    button{
+        font-size: xx-small;
+    }
+
 }
+
 
 .try{
     background-color:  hsl(248, 32%, 49%);
@@ -85,58 +63,33 @@ body{
     color: white;
     font-weight: 600;
 }
-.form-area{
-    text-align: center;
+ form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center; 
     background-color: #fff;
-    padding: 20px;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 input {
-    display: block;
-    width: 100%;
-    height: 40px;
+    padding: 1rem;
     border-radius: 5px;
-    margin-bottom: 10px;
     outline: none;
-    padding-left: 10px;
+    margin-bottom: 10px;
     border: solid 1px hsl(246, 25%, 77%);
-}
-input:hover {
+} 
+
+input:hover{
     border: solid 2px hsl(249, 10%, 26%) ;
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 95% 10px ;
 }
-img{
-    opacity: 0;
- }
- .input-box:hover img{
-     opacity: 100;
- }
-@media screen and (max-width: 375px) {
-    
-    .container {
-        background: url('./images/bg-intro-mobile.png');
-        background-color: hsl(0, 100%, 74%) ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .col-1 {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    .col-1 > p {
-        padding: 0;
-        font-size: x-small;
-    }
-    h1{
-        font-size: medium;
-        
-        padding: 0;
-    }
-}
-.btn{
+
+button{
     display: block;
     text-align: center;
     border-radius: 5px;
@@ -147,6 +100,20 @@ img{
     color: #fff;   
     font-weight: bold;
 }
+button:hover {
+    cursor: pointer;
+}
+.err {
+    display: none;
+}
+input:hover + .err{
+    display: block;
+    color: hsl(0, 100%, 74%) ;
+    font-size: xx-small;
+    font-weight: 400;
+    text-align: end;
+    margin-bottom: 5px;
+ }
 .terms {
     font-size: x-small;
 }
@@ -154,17 +121,6 @@ span {
     color: hsl(0, 100%, 74%) ;
     font-weight: 600;
 }
-img {
-    position: relative;
-    top: 40px;
-    left: 45%;
-}
-.input-box p {
-    visibility: hidden;
-    color: hsl(0, 100%, 74%);
-    font-size: xx-small;
-    text-align: end;
-}
-.input-box:hover p{
-    visibility: visible;
-}
+
+
+
