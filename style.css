@@ -1,4 +1,4 @@
-body{
+*, body{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -83,10 +83,6 @@ input {
 
 input:hover{
     border: solid 2px hsl(249, 10%, 26%) ;
-    background-image: url('./images/icon-error.svg');
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 95% 10px ;
 }
 
 button{
@@ -105,15 +101,13 @@ button:hover {
 }
 .err {
     display: none;
-}
-input:hover + .err{
-    display: block;
     color: hsl(0, 100%, 74%) ;
     font-size: xx-small;
     font-weight: 400;
     text-align: end;
     margin-bottom: 5px;
- }
+}
+
 .terms {
     font-size: x-small;
 }

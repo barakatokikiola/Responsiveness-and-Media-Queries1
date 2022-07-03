@@ -38,11 +38,11 @@
                             <span class="err">First Name cannot be empty</span>
                             <input type="text" placeholder="Last Name">
                             <span class="err">Last Name cannot be empty</span>
-                            <input type="email" placeholder="Email Address">
+                            <input type="email" placeholder="Email Address" id="email">
                             <span class="err">This does not looks like an email</span>
                             <input type="password" placeholder="Password">
                             <span class="err">Password cannot be empty</span>
-                        <button>CLAIM YOUR FREE TRIAL</button>
+                        <button id="btn" onmousedown="toggleVisibility()" onmouseup="removeHover()">CLAIM YOUR FREE TRIAL</button>
                         <p class="terms">By clicking the button, you
                             are agreeing to our
                             <span>Terms and Services </span>
@@ -50,6 +50,8 @@
                     </form>
             </div>
         </div>
+        <script src="./script.js">
+        </script>
 </body>
 
 </html>
