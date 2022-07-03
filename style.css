@@ -3,9 +3,11 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .container {
+    body{
         background: url('./images/bg-intro-desktop.png');
         background-color: hsl(0, 100%, 74%) ;
+    }
+    .container {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -19,9 +21,11 @@
 }
 
 @media screen and (max-width: 375px) {
-    .container {
+    body{
         background: url('./images/bg-intro-mobile.png');
         background-color: hsl(0, 100%, 74%) ;
+    }
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
